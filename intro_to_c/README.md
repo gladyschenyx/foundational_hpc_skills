@@ -136,12 +136,33 @@ The result of Example 4 would be: The value of the float is 3.14
  
 ### C Arrays - Data structure that holds a fixed number of data elements of a specific type
 
-```int A[10]; // declares an array of 10 integers
+```
+int A[10]; // declares an array of 10 integers
 ```
 | A[0]          | A[1]          | A[2] | A[3] | A[4]         | A[5]        | A[6] | A[7]|  A[8] | A[9]|
 | ------------- | ------------- | -------------   | -------------   | ------------- | -------------   | -------------   | ------------- | -------------   | -------------  |       
 
 * Each Element is 4 bytes for an integer
+
+To assign values to the array elements,
+```
+A[0] = 7;
+A[1] = 32;
+A[2] = 256;
+A[3] = 17;
+A[4] = -20;
+A[5] = 22;
+A[6] = 1;
+A[7] = 0;
+A[8] = 59;
+A[9] = -2;
+```
+
+```
+printf(“The value of A[3] = %d\n”, A[3]);
+```
+Output:
+The value of A[3] = 17
 
 ### <a name="loops"></a>3. Loops
 ### <a name="if"></a>4. If Statements
