@@ -88,6 +88,7 @@ Basic C Data Types:
 
 #### Formatted Output with `printf` function
 <ins>Example 1</ins>:
+
 Code:
 ```
 printf("Hello World");
@@ -100,6 +101,7 @@ Hello World$
 The Result of Example 1 would be: Hello World
 
 <ins>Example 2</ins>:
+
 Code:
 ```
 printf("Hello World\n");
