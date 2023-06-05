@@ -134,6 +134,13 @@ printf(“The value of the float is %.2f\n”, x);
 ```
 The result of Example 4 would be: The value of the float is 3.14
  
+### C Arrays - Data structure that holds a fixed number of data elements of a specific type
+
+
+```int A[10]; // declares an array of 10 integers
+```
+|A[0]| A[1] | |A[2]| A[3] | |A[4]| A[5] | |A[6]| A[7] ||A[8]| A[9] |  A[10] |
+| --- | --- | --- | --- | --- | --- | --- | --- |  --- | --- |           
 
 
 ### <a name="loops"></a>3. Loops
