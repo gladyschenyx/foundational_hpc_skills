@@ -87,6 +87,31 @@ Basic C Data Types:
 | Decimal  | Decimal (precision to 15 places)   | 2.3e-308 to 1.7e308   | 8 |
 
 #### Formatted Output with `printf` function
+##### Example 1:
+Code:
+```
+printf("Hello World");
+```
+Output:
+```
+ $ ./a.out
+Hello World$
+ ```
+The Result of Example 1 would be: Hello World
+
+##### Example 2:
+Code:
+```
+printf("Hello World\n");
+```
+Output:
+```
+ $ ./a.out
+Hello World$
+ ```
+The Result of Example 2 would be: Hello World (with a new line)
+
+ 
 
 ### <a name="loops"></a>3. Loops
 ### <a name="if"></a>4. If Statements
