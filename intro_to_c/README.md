@@ -70,6 +70,23 @@ The value of this integer is 3
 ```
 Specifying `./` before the command or program name indicates that the program should be found and executed in the current directory.
 
+<ins>To specify Output File Name </ins>:
+To compile the C program, use the gcc compiler to compile the C code into an executable:
+```
+$ gcc -o simple simple.c
+```
+-o is compiler flag that allows you to name the executable
+
+To view the list of files in the directory:
+```
+$ ls
+simple  simple.c
+```
+Run the program:
+```
+#./simple
+The value of this integer is 3
+```
 
 ### <a name="dt"></a>2. Data Types
 Variables are named storage areas
