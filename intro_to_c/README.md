@@ -80,8 +80,8 @@ Variables of different data types occupy different amounts of memory and can sto
 
 Basic C Data Types: 
 | Name          | Type          | Range of Values | Size (B) |
-| ------------- | ------------- | -------------   |
-| Char  | Character   | ASCII Characters   | 1 |
+| ------------- | ------------- | -------------   | -------------   |           
+| Char          | Character     | ASCII Characters| 1  |
 | Char  | Character   | ASCII Characters   | 1 |
 | Char  | Character   | ASCII Characters   | 1 |
 | Char  | Character   | ASCII Characters   | 1 |
