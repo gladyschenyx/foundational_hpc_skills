@@ -87,7 +87,7 @@ Basic C Data Types:
 | Decimal  | Decimal (precision to 15 places)   | 2.3e-308 to 1.7e308   | 8 |
 
 #### Formatted Output with `printf` function
-##### Example 1:
+<ins>Example 1</ins>:
 Code:
 ```
 printf("Hello World");
@@ -99,7 +99,7 @@ Hello World$
  ```
 The Result of Example 1 would be: Hello World
 
-##### Example 2:
+<ins>Example 2</ins>:
 Code:
 ```
 printf("Hello World\n");
