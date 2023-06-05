@@ -86,7 +86,7 @@ Basic C Data Types:
 | Float  | Decimal (precision to 6 places)   | 1.2e-38 to 3.4e38   | 4 |
 | Decimal  | Decimal (precision to 15 places)   | 2.3e-308 to 1.7e308   | 8 |
 
-
+## Formatted Output with `printf` function
 
 ### <a name="loops"></a>3. Loops
 ### <a name="if"></a>4. If Statements
