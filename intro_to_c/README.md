@@ -82,9 +82,9 @@ Basic C Data Types:
 | Name          | Type          | Range of Values | Size (B) |
 | ------------- | ------------- | -------------   | -------------   |           
 | Char          | Character     | ASCII Characters| 1  |
-| Char  | Character   | ASCII Characters   | 1 |
-| Char  | Character   | ASCII Characters   | 1 |
-| Char  | Character   | ASCII Characters   | 1 |
+| Int		 | Integer   | -2,147,483,648 to 2,147,483,647   | 4 |
+| Float  | Decimal (precision to 6 places)   | 1.2e-38 to 3.4e38   | 4 |
+| Decimal  | Decimal (precision to 15 places)   | 2.3e-308 to 1.7e308   | 8 |
 
 
 
