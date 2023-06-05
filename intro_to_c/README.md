@@ -115,10 +115,10 @@ $
 The Result of Example 2 would be: Hello World (with a new line)
 
 ### Format Tags: represented by a percent sign (%) followed by a character that specifies the type of formatting
-* %d or %i: Integer value.
-* %f: Floating-point number.
-* %s: String.
-
+* %d : Character
+* %d : Integer
+* %f: Floating-point number
+* %s: String
 
  <ins>Example 3</ins>: 
 ```
