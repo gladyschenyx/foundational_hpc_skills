@@ -139,8 +139,9 @@ The result of Example 4 would be: The value of the float is 3.14
 
 ```int A[10]; // declares an array of 10 integers
 ```
-| Name          | Type          | Range of Values | Size (B) | Name          | Type          | Range of Values | Size (B) |Range of Values | Size (B) |
-| ------------- | ------------- | -------------   | -------------   | ------------- | -------------   | -------------   | ------------- | -------------   | -------------   |       | Name          | Type          | Range of Values | Size (B) | Name          | Type          | Range of Values | Size (B) |Range of Values | Size (B) |
+| Name          | Type          | Range of Values | Size (B) | Name          | Type          | Range of Values | Size (B) |  Range of Values | Size (B) |
+| ------------- | ------------- | -------------   | -------------   | ------------- | -------------   | -------------   | ------------- | -------------   | -------------   |       | Name          | Type          | Range of Values | Size (B) | Name          | Type          | Range of Values | Size (B) |  Range of Values | Size (B) |
+
 
 ### <a name="loops"></a>3. Loops
 ### <a name="if"></a>4. If Statements
