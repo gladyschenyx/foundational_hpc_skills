@@ -79,10 +79,13 @@ For example, `int a = 5` creates a variable (storage area in memory) named â€œaâ
 Variables of different data types occupy different amounts of memory and can store different ranges of values, and these variables must be declared before use.
 
 Basic C Data Types: 
-| Name          | Type          | Range of Values |
+| Name          | Type          | Range of Values | Size (B) |
 | ------------- | ------------- | -------------   |
-| Content Cell  | Content Cell  | Content Cell    |
-| Content Cell  | Content Cell  | Content Cell    |
+| Char  | Character   | ASCII Characters   | 1 |
+| Char  | Character   | ASCII Characters   | 1 |
+| Char  | Character   | ASCII Characters   | 1 |
+| Char  | Character   | ASCII Characters   | 1 |
+
 
 
 ### <a name="loops"></a>3. Loops
