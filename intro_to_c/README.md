@@ -109,11 +109,32 @@ printf("Hello World\n");
 Output:
 ```
  $ ./a.out
-Hello World$
+Hello World
+$
  ```
 The Result of Example 2 would be: Hello World (with a new line)
 
+### Format Tags: represented by a percent sign (%) followed by a character that represents the type of formatting to be applied 
+* %d or %i: Integer value.
+* %f: Floating-point number.
+* %s: String.
+
+
+ <ins>Example 3</ins>: 
+```
+int i = 2;
+printf(“The value of the integer is %d\n”, i);
+```
+The Result of Example 3 would be: The value of the integer is 2
  
+ <ins>Example 4</ins>:
+ ```
+float x = 3.14159;
+printf(“The value of the float is %.2f\n”, x);
+```
+The result of Example 4 would be: The value of the float is 3.14
+ 
+
 
 ### <a name="loops"></a>3. Loops
 ### <a name="if"></a>4. If Statements
