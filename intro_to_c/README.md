@@ -114,7 +114,7 @@ $
  ```
 The Result of Example 2 would be: Hello World (with a new line)
 
-### Format Tags: represented by a percent sign (%) followed by a character that represents the type of formatting to be applied 
+### Format Tags: represented by a percent sign (%) followed by a character that specifies the type of formatting
 * %d or %i: Integer value.
 * %f: Floating-point number.
 * %s: String.
