@@ -139,7 +139,7 @@ The result of Example 4 would be: The value of the float is 3.14
 
 ```int A[10]; // declares an array of 10 integers
 ```
-|A[0]| A[1] | |A[2]| A[3] | |A[4]| A[5] | |A[6]| A[7] ||A[8]| A[9] |
+| Name          | Type          | Range of Values | Size (B) | Name          | Type          | Range of Values | Size (B) |Range of Values | Size (B) |
 | ------------- | ------------- | -------------   | -------------   | ------------- | -------------   | -------------   | ------------- | -------------   | -------------   |       | Name          | Type          | Range of Values | Size (B) | Name          | Type          | Range of Values | Size (B) |Range of Values | Size (B) |
 
 ### <a name="loops"></a>3. Loops
