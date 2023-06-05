@@ -10,7 +10,7 @@ C is one of the common programming languages used in HPC.
 
 Table of Contents:
 * The Basics - Part One
-	* [Simple example](#simple)
+	* [Simple Example](#simple)
 
  * [Data Types](#dt)
 	* Basic Data Types
@@ -72,6 +72,13 @@ Specifying `./` before the command or program name indicates that the program sh
 
 
 ### <a name="dt"></a>2. Data Types
+Variables are named storage areas
+
+For example, `int a = 5` creates a variable (storage area in memory) named “a” and saves the value of 5 in that memory location.
+
+Variables of different data types occupy different amounts of memory and can store different ranges of values, and these variables must be declared before use.
+
+Basic C Data Types: 
 
 
 ### <a name="loops"></a>3. Loops
