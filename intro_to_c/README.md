@@ -881,13 +881,14 @@ f_array_dyn[4] = 1.000000
 ```
 
 ### <a name="exercises"></a>8. Exercises and Resources
-* Exercises that go with these slides (as well as some examples to work through)
-– https://github.com/olcf/foundational_hpc_skills •
+<ins>Exercises that go with these slides (as well as some examples to work through)</ins>:
+* https://github.com/olcf/foundational_hpc_skills 
 
-* Other sites
-– https://en.cppreference.com/w/c/language
-– https://en.wikibooks.org/wiki/C_Programming
-– https://stackoverflow.com/questions/tagged/c
+<ins>Other sites</ins>:
+* https://en.cppreference.com/w/c/language
+* https://en.wikibooks.org/wiki/C_Programming
+* https://stackoverflow.com/questions/tagged/c
 
 * Many other tutorials can be found by googling “c programming language”
-• Website with many practice problems – https://projecteuler.net/
+
+* Website with many practice problems – https://projecteuler.net/
