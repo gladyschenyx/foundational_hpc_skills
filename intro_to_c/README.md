@@ -37,6 +37,7 @@ Before getting started, make sure that you have a fresh Unix terminal open. Once
 ```
 $ cd ~/foundational_hpc_skills/intro_to_c
 ```
+> Note: The above syntax is assuming you stored the `foundational_hpc_skills` repository in your Home directory.
 
 ### <a name="simple"></a>1. Simple Example
 ```
