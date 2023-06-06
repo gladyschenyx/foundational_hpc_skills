@@ -182,6 +182,7 @@ int A[10]; // declares an array of 10 integers
 | A[0]          | A[1]          | A[2] | A[3] | A[4]         | A[5]        | A[6] | A[7]|  A[8] | A[9]|
 | ------------- | ------------- | -------------   | -------------   | ------------- | -------------   | -------------   | ------------- | -------------   | -------------  |       
 
+> Note: // is used to comment the code 
 * Each Element is 4 bytes for an integer
 
 To assign values to the array elements,
