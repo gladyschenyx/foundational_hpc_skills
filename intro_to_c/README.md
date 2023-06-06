@@ -22,6 +22,8 @@ Table of Contents:
 * [If Statements](#if)
  	* [Arithmetic Operators](#aop)
  	* [Relational Operators](#rop)
+ 	* [Assignment Operators](#asop)
+ 	* [Logical Operators](#lop)
 * [Functions](#functions)
 * [Addresses and Pointers](#add)
 * [Memory Allocation](#mem)
@@ -496,6 +498,21 @@ Relational Operators tests relationship between two operands
 | >= Greater than or equal to          | A >= B;     | 1 | True |
 | <= Less than or equal to          | A >= B;     | 0 | False |
 
+### <a name="asop"></a>c. Assignment Operators
+| Operator         | Syntax        | Equivalent Expression | Assigned Value to A|
+| ------------- | -------------   | -------------   |     
+| =     | A = B; | A = B | 2 |
+| +=     | A += B; | A = A + B; | 12 |
+| -=     | A -= B; | A = A - B; | 8 |
+| *=     | A *= B; | A = A * B; | 20 |
+| /=     | A /= B; | A = A / B; | 5 |
+| %=     | A %= B; | A = A % B; | 0 |
+
+
+
+
+
+### <a name="lop"></a>d. Relational Operators
 
 ### <a name="functions"></a>5. Functions
 ### <a name="add"></a>6. Addresses and Pointers
