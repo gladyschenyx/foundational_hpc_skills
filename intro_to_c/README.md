@@ -516,9 +516,9 @@ int C = 5;
 ```
 | Operator         | Meaning        | Syntax | Output | True/False |
 | ------------- | -------------   | -------------   |     -------------   |      -------------   |
-| ```&&``` And     | True if both true | ((A > B) && (B == C)); | 0 | False |
+| && And     | True if both true | ((A > B) && (B == C)); | 0 | False |
 |  &#124; &#124; Or  | True if at least 1 is true | ((A > B)  &#124; &#124; (B == C)); | 1 | True |
-| ```!``` Not     | Returns the opposite | !(B == C); | 1 | True |
+| ! Not     | Returns the opposite | !(B == C); | 1 | True |
 
 
 <ins>Syntax of If Statement</ins>:
