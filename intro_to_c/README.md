@@ -33,6 +33,11 @@ Table of Contents:
   	* [Heap](#heap)
 * [Exercises](#exercises)
 
+Before getting started, make sure that you have a fresh Unix terminal open. Once you have a terminal open, change directories to the intro_to_c directory:
+```
+$ cd ~/foundational_hpc_skills/intro_to_c
+```
+
 ### <a name="simple"></a>1. Simple Example
 ```
 /*------------------------------------------------------------
