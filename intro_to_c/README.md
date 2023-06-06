@@ -367,9 +367,6 @@ To compile and run code:
 $ gcc -o for_loop for_loop.c
 
 $ ./for_loop
-```
-
-```
 Iteration: 0, sum = 0
 Iteration: 1, sum = 1
 Iteration: 2, sum = 3
@@ -380,6 +377,86 @@ Iteration: 6, sum = 21
 Iteration: 7, sum = 28
 Iteration: 8, sum = 36
 Iteration: 9, sum = 45
+```
+<ins>Continue Statement</ins>:
+When a continue statement is encountered within a loop, the remaining statements in the loop body (after the continue) are skipped and the next iteration of the loop begins.
+
+Example of continue statement(03_loops/continue/continue.c):
+```
+/*------------------------------------------------------------
+Program showing a continue statement within a for loop. The 
+loop iteration number is printed except for the value 7 since
+the continue statement moves on to the next iteration of the 
+loop.
+------------------------------------------------------------*/
+
+#include <stdio.h>
+
+int main(){
+
+    for(int i=0; i<10; i++){
+
+        if(i == 7){
+            continue;
+        }
+
+        printf("Loop iteration: %d\n", i);
+    }	
+
+    return 0;
+}
+```
+To compile and run code:
+```
+$ gcc –o continue continue.c
+$ ./continue
+Loop iteration: 0
+Loop iteration: 1
+Loop iteration: 2
+Loop iteration: 3
+Loop iteration: 4
+Loop iteration: 5
+Loop iteration: 6
+Loop iteration: 8
+Loop iteration: 9
+```
+<ins>Break Statement</ins>:
+When a break statement is encountered within a loop, the loop is terminated.
+
+Example of break statement(03_loops/break/break.c):
+```
+/*------------------------------------------------------------
+Program showing a continue statement within a for loop. The 
+loop iteration number is printed except for the value 7 since
+the continue statement moves on to the next iteration of the 
+loop.
+------------------------------------------------------------*/
+
+#include <stdio.h>
+
+int main(){
+
+    for(int i=0; i<10; i++){
+        if(i == 7){
+            continue;
+        }
+        printf("Loop iteration: %d\n", i);
+    }	
+
+    return 0;
+}
+```
+To compile and run code:
+```
+$ gcc –o break break.c
+$ ./break
+Loop iteration: 0
+Loop iteration: 1
+Loop iteration: 2
+Loop iteration: 3
+Loop iteration: 4
+Loop iteration: 5
+Loop iteration: 6
 ```
 
 ### <a name="if"></a>4. If Statements
