@@ -31,7 +31,7 @@ Table of Contents:
 * [Memory Allocation](#mem)
   	* [Stack](#stack)
   	* [Heap](#heap)
-* [Exercises](#exercises)
+* [Exercises & Resources](#exercises)
 
 ### <a name="simple"></a>1. Simple Example
 ```
