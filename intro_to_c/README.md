@@ -13,13 +13,13 @@ Table of Contents:
 	* [Simple Example](#simple)
 
  * [Data Types](#dt)
-	* Basic Data Types
-	* `printf` function
-	* Arrays
+	* [Basic Data Types](#bdt)
+	* [`printf` function](#pf)
+	* [Arrays](#arrays)
 * [Loops](#loops)
 	* [While Loop](#while)
-	* [`do-while` loop](#dowhile)
-	* [`for` loop](#for)
+	* [`do-while` Loop](#dowhile)
+	* [`for` Loop](#for)
 * [If Statements](#if)
 * [Functions](#functions)
 * [Addresses and Pointers](#add)
@@ -98,7 +98,8 @@ For example, `int a = 5` creates a variable (storage area in memory) named “a�
 
 Variables of different data types occupy different amounts of memory and can store different ranges of values, and these variables must be declared before use.
 
-Basic C Data Types: 
+### <a name="bdt"></a> Basic Data Types
+
 | Name          | Type          | Range of Values | Size (B) |
 | ------------- | ------------- | -------------   | -------------   |           
 | Char          | Character     | ASCII Characters| 1  |
@@ -106,6 +107,7 @@ Basic C Data Types:
 | Float  | Decimal (precision to 6 places)   | 1.2e-38 to 3.4e38   | 4 |
 | Decimal  | Decimal (precision to 15 places)   | 2.3e-308 to 1.7e308   | 8 |
 
+### <a name="pf"></a> Printf Function
 #### Formatted Output with `printf` function
 <ins>Example 1</ins>:
 
@@ -158,6 +160,7 @@ printf(“The value of the float is %.2f\n”, x);
 
 Result: The value of the float is 3.14
  
+### <a name="arrays"></a> Arrays
 ### C Arrays - Data structure that holds a fixed number of data elements of a specific type
 
 ```
