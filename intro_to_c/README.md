@@ -17,9 +17,9 @@ Table of Contents:
 	* `printf` function
 	* Arrays
 * [Loops](#loops)
-	* `while` loop (#while)
-	* `do-while` loop (#dowhile)
-	* `for` loop (#for)
+	* [`while` loop] (#while)
+	* [`do-while` loop] (#dowhile)
+	* [`for` loop] (#for)
 * [If Statements](#if)
 * [Functions](#functions)
 * [Addresses and Pointers](#add)
