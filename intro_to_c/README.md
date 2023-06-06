@@ -885,8 +885,10 @@ f_array_dyn[4] = 1.000000
 – https://github.com/olcf/foundational_hpc_skills •
 
 * Other sites
-– https://en.cppreference.com/w/c/language
+- https://en.cppreference.com/w/c/language
+
 – https://en.wikibooks.org/wiki/C_Programming
+
 – https://stackoverflow.com/questions/tagged/c
 
 * Many other tutorials can be found by googling “c programming language”
