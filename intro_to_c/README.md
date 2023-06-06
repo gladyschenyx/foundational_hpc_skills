@@ -670,5 +670,127 @@ After calling the function, number = 1
 * Changes to the formal arguments do not affect the actual arguments.
 
 ### <a name="add"></a>6. Addresses and Pointers
+<ins>Variable Addresses</ins>:
+* The memory address of a variable can be referenced using the reference operator, &
+
+```
+ #include <stdio.h>
+ int main(){
+   int i = 1;
+   printf("The value of i:   %d\n", i);
+   printf("The address of i: %p\n", &i);
+   return 0;
+ 
+ }
+```
+```%p```: format tag to print address
+```&```:  reference operator – gives the address of the variable
+
+```
+$ gcc –o variable_addresses variable_addresses.c
+$ ./variable_addresses
+The value of i: 1
+The address of i: 0x7fff3e720c2c (this address will vary)
+```
+<ins>Pointer Variables</ins>:
+Pointers: special variables in C to store memory addresses
+`*`: used to declare pointer
+
+Example of using Addresses and Pointers (06_addresses_and_pointers/pointers_1/pointers_1.c)
+```
+#include <stdio.h>
+
+int main(){
+    float x = 2.713;
+    float *p_x;
+
+    p_x = &x;
+
+    printf("The value of x:   %f\n", x);
+    printf("The address of x: %p\n", &x);
+    printf("The value of p_x: %p\n", p_x);
+    printf("The value stored at the memory address stored in p_x: %f\n", *p_x);
+
+    return 0;
+}
+```
+
+``` float *p_x; ```: The pointer is assigned the value of the memory address of x
+``` p_x = &x; ```: The pointer is assigned the value of the memory address of x
+``` *p_x```: * (dereference operator) – gives the value stored at a memory address
+
+To compile and run code:
+```
+$ gcc -o pointers_1 pointers_1.c
+
+$ ./pointers_1
+The value of x: 2.713000
+The address of x: 0x7fff5ce8aa68
+The value of p_x: 0x7fff5ce8aa68
+The value stored at the memory address held in p_x: 2.713000
+```
+
+Another Example of using Addresses and Pointers (06_addresses_and_pointers/pointers_2/pointers_2.c)
+```*p_x = 3.141```: (dereference operator) – also allows you to change the value stored at that memory address
+
+<ins>Back to Functions</ins>:
+```
+/*---------------------------------------------------------------
+Program that CORRECTLY shows how to use a function to change
+the value of an integer. This is meant to show how to "call a
+function by reference".
+---------------------------------------------------------------*/
+
+#include <stdio.h>
+
+// Function Definition
+void change_number(int *i){
+    *i = 2;
+    printf("Inside the function, the number's value is %d\n", *i);
+}
+
+// Main Function
+int main(){
+
+    int number = 1;
+    printf("\nBefore calling the function, number = %d\n", number);
+
+    change_number(&number);
+
+    printf("After calling the function, number = %d\n\n", number);
+
+    return 0;
+}
+```
+To compile and run code:
+```
+$ gcc –o change_value_correct change_value_correct.c
+$ ./change_value_correct
+Before calling the function, number = 1
+Inside the function, the number's value is 2
+After calling the function, number = 2
+```
+Remember, the * used declare the pointer variable, i, in the function argument is different than the * used within the body of the function. To be clear,
+```int *i```: The * here is simply because this is how you declare a pointer to an integer.
+
+<ins>Call by Reference</ins>:
+```*i = 2```
+```printf(“ ... %d\n”, *i)```:  The * in these statements is the dereference operator, which allows you to access the value of the variable associated with the memory address.
+
 ### <a name="mem"></a>7. Memory Allocation
+<ins>Stack</ins>:
+– Region of computer memory that stores temporary variables
+• When a new function is called the variables are created on stack
+• When the function returns, the memory is returned to the stack (LIFO)
+– Memory managed for you
+– Variables can only be accessed locally
+– Variable size must be known at compile time
+
+<ins>Heap</ins>:
+– Region of compute memory for dynamic allocation
+• No pattern to allocation/deallocation (user can do this any time) – Memory managed by user
+• E.g. using malloc(), free(), etc.
+– Variables can be accessed globally
+– Variable size can be determined at run time
+
 ### <a name="exercises"></a>8. Exercises
