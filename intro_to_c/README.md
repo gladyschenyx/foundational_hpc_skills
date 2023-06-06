@@ -775,10 +775,13 @@ Remember, the * used declare the pointer variable, i, in the function argument i
 
 <ins>Call by Reference</ins>:
 ```*i = 2```
-```printf(“ ... %d\n”, *i)```:  The * in these statements is the dereference operator, which allows you to access the value of the variable associated with the memory address.
+```printf(“ ... %d\n”, *i)```:  
+
+The * in these statements is the dereference operator, which allows you to access the value of the variable associated with the memory address.
 
 ### <a name="mem"></a>7. Memory Allocation
 <ins>Stack</ins>:
+
 – Region of computer memory that stores temporary variables
 • When a new function is called the variables are created on stack
 • When the function returns, the memory is returned to the stack (LIFO)
@@ -787,6 +790,7 @@ Remember, the * used declare the pointer variable, i, in the function argument i
 – Variable size must be known at compile time
 
 <ins>Heap</ins>:
+
 – Region of compute memory for dynamic allocation
 • No pattern to allocation/deallocation (user can do this any time) – Memory managed by user
 • E.g. using malloc(), free(), etc.
