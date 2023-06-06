@@ -277,7 +277,110 @@ x = 3.906250
 x = 1.953125
 ```
 
+ <ins>Do-While Loops</ins>:
 
+```
+do {
+// Execute loop statements until expression evaluates to 0
+} while (expression)
+```
+* The expression is evaluated after each iteration
+
+Example of while loop (03_loops/while_loop/do_while_loop.c):
+```
+#include <stdio.h>
+
+int main(){
+
+    int j = 10; // Declare integer j and set its value to 10
+
+    /* --------------------------------------
+    do while loop
+        -> Executes statements at least 1 time, 
+           even if condition is not met 
+    -------------------------------------- */
+    do {
+        printf("do-while: j = %d\n", j);
+        j = j + 1;
+    } while(j > 10 && j < 20);
+
+    return 0;
+}
+```
+To compile and run code:
+```
+$ gcc -o do_while_loop do_while_loop.c
+
+$ ./do_while_loop
+```
+Output:
+```
+do-while: j = 10
+do-while: j = 11
+do-while: j = 12
+do-while: j = 13
+do-while: j = 14
+do-while: j = 15
+do-while: j = 16
+do-while: j = 17
+do-while: j = 18
+do-while: j = 19
+```
+<ins>For Loops</ins>:
+
+```
+for(initialization; conditional_expression; iteration){ 
+// loop statements
+}
+```
+* conditional_expression: Evaluated before body of loop
+* iteration: Evaluated after body of loop
+
+Example of for loop (03_loops/for_loop/for_loop.c):
+```
+/*------------------------------------------------------------
+Program showing the basic idea of a for loop. For each
+iteration of the loop, it prints the iteration number (i) 
+along with the sum of all values of i up until that point.
+------------------------------------------------------------*/
+
+#include <stdio.h>
+
+int main(){
+
+    int N   = 10;
+    int sum = 0;
+
+    for(int i=0; i<N; i++){
+
+        sum = sum + i;
+        printf("Iteration: %d, sum = %d\n", i, sum);
+
+    }
+
+    return 0;
+}
+```
+
+To compile and run code:
+```
+$ gcc -o for_loop for_loop.c
+
+$ ./for_loop
+```
+
+```
+Iteration: 0, sum = 0
+Iteration: 1, sum = 1
+Iteration: 2, sum = 3
+Iteration: 3, sum = 6
+Iteration: 4, sum = 10
+Iteration: 5, sum = 15
+Iteration: 6, sum = 21
+Iteration: 7, sum = 28
+Iteration: 8, sum = 36
+Iteration: 9, sum = 45
+```
 
 ### <a name="if"></a>4. If Statements
 ### <a name="functions"></a>5. Functions
