@@ -470,6 +470,7 @@ int A = 10;
 int B = 2;
 ```
 
+### <a name="aop"></a>a. Arithmetic Operators
 | Operator          | Syntax        | Output |
 | ------------- | ------------- | -------------   |          
 | + Add          | A + B     | 12| 
@@ -477,9 +478,19 @@ int B = 2;
 | * Multiply          | A * B     | 20|
 | / Divide          | A / B     | 5| 
 | % Modulus (Remainder after division of B into A) | A % B     | 0 | 
-### <a name="aop"></a>a. Arithmetic Operators
+| A++ Increment (same as A = A + 1) | A++     | 11| 
+| B-- Decrement (same as B = B - 1) | B--    | 1| 
+
 
 ### <a name="rop"></a>b. Relational Operators
+Relational Operators tests relationship between two operands
+* If true, returns 1
+* If false, returns 0
+
+
+| Operator          | Syntax        | Output | True/False |
+| ------------- | ------------- | -------------   | -------------   |     
+| == Equal to          | A + B     | 0 | False |
 
 ### <a name="functions"></a>5. Functions
 ### <a name="add"></a>6. Addresses and Pointers
