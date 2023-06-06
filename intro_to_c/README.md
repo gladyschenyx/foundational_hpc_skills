@@ -20,6 +20,8 @@ Table of Contents:
 	* [`do-while` Loop](#dowhile)
 	* [`for` Loop](#for)
 * [If Statements](#if)
+ 	* [Arithmetic Operators](#aop)
+ 	* [Relational Operators](#rop)
 * [Functions](#functions)
 * [Addresses and Pointers](#add)
 * [Memory Allocation](#mem)
@@ -463,6 +465,10 @@ Loop iteration: 6
 ```
 
 ### <a name="if"></a>4. If Statements
+
+### <a name="aop"></a>a. Arithmetic Operators
+### <a name="rop"></a>b. Relational Operators
+
 ### <a name="functions"></a>5. Functions
 ### <a name="add"></a>6. Addresses and Pointers
 ### <a name="mem"></a>7. Memory Allocation
