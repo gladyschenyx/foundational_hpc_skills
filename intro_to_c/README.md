@@ -9,7 +9,7 @@ Many operating systems, as well as Perl, PHP, Python, and Ruby, are written in C
 C is one of the common programming languages used in HPC.
 
 Table of Contents:
-* [The Basics - Part One](#simple)
+* [Basics of C - Part One](#simple)
 
  * [Data Types](#dt)
 	* [Basic Data Types](#bdt)
