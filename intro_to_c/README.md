@@ -132,8 +132,8 @@ $
 The Result of Example 2 would be: Hello World (with a new line)
 
 ### Format Tags: represented by a percent sign (%) followed by a character that specifies the type of formatting
-* %d : Character
-* %d : Integer
+* %c: Character
+* %d: Integer
 * %f: Floating-point number
 * %s: String
 
@@ -142,6 +142,7 @@ The Result of Example 2 would be: Hello World (with a new line)
 int i = 2;
 printf(“The value of the integer is %d\n”, i);
 ```
+* i represents the variable whose value is used in the format tag
 The Result of Example 3 would be: The value of the integer is 2
  
  <ins>Example 4</ins>:
@@ -149,6 +150,7 @@ The Result of Example 3 would be: The value of the integer is 2
 float x = 3.14159;
 printf(“The value of the float is %.2f\n”, x);
 ```
+* x represents the variable whose value is used in the format tag
 The result of Example 4 would be: The value of the float is 3.14
  
 ### C Arrays - Data structure that holds a fixed number of data elements of a specific type
@@ -180,6 +182,38 @@ printf(“The value of A[3] = %d\n”, A[3]);
 ```
 Output:
 The value of A[3] = 17
+
+Example that shows the use of variables, arrays, and the printf() function, as well as how to find the size of data types using the sizeof() function:
+```
+/*------------------------------------------------------------
+Program that prints that value of several variables to the
+screen along with their size in bytes (in a table format).
+------------------------------------------------------------*/
+
+#include <stdio.h>
+
+int main(){
+	
+    char a      = 'X';
+    int i       = 22;
+    float x     = 3.14159265358979323846264338327;
+    double y    = 3.14159265358979323846264338327;
+    char pi[31] = "3.14159265358979323846264338327";
+
+    printf("\n--------------------------------------------------------------------------\n");
+    printf("%-20s %-20s %-20s %-20s \n", "Variable", "Data Type", "Value", "Size (B)");
+    printf("--------------------------------------------------------------------------\n");
+    printf("%-20s %-20s %-20c %-20lu \n", "a", "char", a, sizeof(char));
+    printf("%-20s %-20s %-20i %-20lu \n", "i", "int", i, sizeof(int));
+    printf("%-20s %-20s %-20.16f %-20lu \n", "x", "float", x, sizeof(float));
+    printf("%-20s %-20s %-20.16f %-20lu \n", "y", "double", y, sizeof(double));
+    printf("--------------------------------------------------------------------------\n");
+    printf("Actual value of pi ( 29 decimal places ): 3.14159265358979323846264338327\n\n");
+
+    return 0;
+}
+```
+
 
 ### <a name="loops"></a>3. Loops
 ### <a name="if"></a>4. If Statements
