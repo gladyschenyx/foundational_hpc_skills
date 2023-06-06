@@ -508,13 +508,35 @@ Relational Operators tests relationship between two operands
 | /=     | A /= B; | A = A / B; | 5 |
 | %=     | A %= B; | A = A % B; | 0 |
 
+### <a name="lop"></a>d. Logical Operators
+```
+int A = 10;
+int B = 2;
+int C = 5;
+```
+| Operator         | Meaning        | Syntax | Output | True/False |
+| ------------- | -------------   | -------------   |     -------------   |      -------------   |
+| && And     | True if both true | ((A > B) && (B == C)); | 0 | False |
+| || Or     | True if at least 1 is true | ((A > B) || (B == C)); | 1 | True |
+| ! Not     | Returns the opposite | !(B == C); | 1 | True |
 
+<ins>Syntax of If Statement</ins>:
 
+```
+if(condition_1){
+// Execute these statements if condition_1 is met
+ }
+ else if(condition_2){
+// Execute these statements if condition_2 is met
+} else{
+// Execute these statements if other conditions are not met
+}
+```
+Once a condition is met, the statements associated with that section are executed and all other sections are ignored.
 
-
-### <a name="lop"></a>d. Relational Operators
 
 ### <a name="functions"></a>5. Functions
+
 ### <a name="add"></a>6. Addresses and Pointers
 ### <a name="mem"></a>7. Memory Allocation
 ### <a name="exercises"></a>8. Exercises
