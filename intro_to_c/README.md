@@ -465,8 +465,17 @@ Loop iteration: 6
 ```
 
 ### <a name="if"></a>4. If Statements
+```
+int A = 10;
+int B = 2;
+```
 
+| Operator          | Syntax        | Output |
+| ------------- | ------------- | -------------   |          
+| + Add          | A + B     | 12| 
+| + Subtract          | A - B     | 8| 
 ### <a name="aop"></a>a. Arithmetic Operators
+
 ### <a name="rop"></a>b. Relational Operators
 
 ### <a name="functions"></a>5. Functions
