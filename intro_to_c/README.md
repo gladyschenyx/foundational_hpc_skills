@@ -16,7 +16,7 @@ Table of Contents:
 	* Basic Data Types
 	* `printf` function
 	* Arrays
-* [Loops](#loops)
+* [Loops]
 	* [While Loop](#while)
 	* [`do-while` loop](#dowhile)
 	* [`for` loop](#for)
@@ -278,7 +278,7 @@ x = 3.906250
 x = 1.953125
 ```
 
- <ins>Do-While Loops</ins>:
+### <a name="Do While"></a> b. Do While Loops
 
 ```
 do {
@@ -327,7 +327,7 @@ do-while: j = 17
 do-while: j = 18
 do-while: j = 19
 ```
-<ins>For Loops</ins>:
+### <a name="for"></a>c. For Loops
 
 ```
 for(initialization; conditional_expression; iteration){ 
