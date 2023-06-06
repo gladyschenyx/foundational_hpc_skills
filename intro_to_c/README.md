@@ -500,7 +500,7 @@ Relational Operators tests relationship between two operands
 
 ### <a name="asop"></a>c. Assignment Operators
 | Operator         | Syntax        | Equivalent Expression | Assigned Value to A|
-| ------------- | -------------   | -------------   |     
+| ------------- | -------------   | -------------   |     -------------   |  
 | =     | A = B; | A = B | 2 |
 | +=     | A += B; | A = A + B; | 12 |
 | -=     | A -= B; | A = A - B; | 8 |
