@@ -115,7 +115,7 @@ Output:
  $ ./a.out
 Hello World$
  ```
-The Result of Example 1 would be: Hello World
+Result: Hello World
 
 <ins>Example 2</ins>:
 
@@ -129,7 +129,7 @@ Output:
 Hello World
 $
  ```
-The Result of Example 2 would be: Hello World (with a new line)
+Result: Hello World (with a new line)
 
 ### Format Tags: represented by a percent sign (%) followed by a character that specifies the type of formatting
 * %c: Character
@@ -144,7 +144,7 @@ printf(“The value of the integer is %d\n”, i);
 ```
 * i represents the variable whose value is used in the format tag
 
-The Result of Example 3 would be: The value of the integer is 2
+Result: The value of the integer is 2
  
  <ins>Example 4</ins>:
  ```
@@ -153,7 +153,7 @@ printf(“The value of the float is %.2f\n”, x);
 ```
 * x represents the variable whose value is used in the format tag
 
-The result of Example 4 would be: The value of the float is 3.14
+Result: The value of the float is 3.14
  
 ### C Arrays - Data structure that holds a fixed number of data elements of a specific type
 
@@ -214,6 +214,19 @@ int main(){
 
     return 0;
 }
+```
+
+Output:
+```
+--------------------------------------------------------------------------
+Variable             Data Type            Value                Size (B)             
+--------------------------------------------------------------------------
+a                    char                 X                    1                    
+i                    int                  22                   4                    
+x                    float                3.1415927410125732   4                    
+y                    double               3.1415926535897931   8                    
+--------------------------------------------------------------------------
+Actual value of pi ( 29 decimal places ): 3.14159265358979323846264338327
 ```
 
 
