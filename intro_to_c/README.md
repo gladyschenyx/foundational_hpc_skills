@@ -29,6 +29,8 @@ Table of Contents:
  	* [User-Defined Functions](#udf)
 * [Addresses and Pointers](#add)
 * [Memory Allocation](#mem)
+  	* [Stack](#stack)
+  	* [Heap](#heap)
 * [Exercises](#exercises)
 
 ### <a name="simple"></a>1. Simple Example
@@ -780,7 +782,7 @@ Remember, the * used declare the pointer variable, i, in the function argument i
 The * in these statements is the dereference operator, which allows you to access the value of the variable associated with the memory address.
 
 ### <a name="mem"></a>7. Memory Allocation
-<ins>Stack</ins>:
+### <a name="stack"></a> Stack
 
 * Region of computer memory that stores temporary variables
 * When a new function is called the variables are created on stack
@@ -789,7 +791,7 @@ The * in these statements is the dereference operator, which allows you to acces
 * Variables can only be accessed locally
 * Variable size must be known at compile time
 
-<ins>Heap</ins>:
+### <a name="heap"></a> Heap
 
 * Region of compute memory for dynamic allocation
 * No pattern to allocation/deallocation (user can do this any time) – Memory managed by user
@@ -797,4 +799,95 @@ The * in these statements is the dereference operator, which allows you to acces
 * Variables can be accessed globally
 * Variable size can be determined at run time
 
-### <a name="exercises"></a>8. Exercises
+<ins>Static</ins>:
+Example of Static Memory Allocation (07_memory_allocation/static.c):
+```
+/*------------------------------------------------------------
+Program showing usage of a statically-allocated array.
+------------------------------------------------------------*/
+
+#include <stdio.h>
+
+int main(){
+
+    // Statically-allocated array of floats
+    int N = 5;
+    float f_array[N];
+
+    for(int i=0; i<N; i++){
+        f_array[i] = 0.25*i;
+    }
+
+    for(int i=0; i<N; i++){
+        printf("f_array[%d] = %f\n", i, f_array[i]);
+    }
+
+    return 0;
+}
+```
+To compile and run code:
+```
+$ gcc -o static static.c
+$ ./static
+f_array[0] = 0.000000
+f_array[1] = 0.250000
+f_array[2] = 0.500000
+f_array[3] = 0.750000
+f_array[4] = 1.000000
+```
+
+<ins>Dynamic</ins>:
+Example of Dynamic Memory Allocation (07_memory_allocation/dynamic.c):
+```
+/*------------------------------------------------------------
+Program showing usage of a dynamically-allocated array.
+------------------------------------------------------------*/
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+
+    // Dynamically-allocated array of floats
+    int N = 5;
+    float *f_array_dyn = malloc(N*sizeof(float));
+
+    for(int i=0; i<N; i++){
+        f_array_dyn[i] = 0.25*i;
+    }
+
+    for(int i=0; i<N; i++){
+        printf("f_array_dyn[%d] = %f\n", i, f_array_dyn[i]);
+    }
+
+    free(f_array_dyn);
+
+    return 0;
+}
+```
+``` malloc(N*sizeof(float))```: Allocates N*sizeof(float) bytes of memory and returns pointer to the block of memory
+
+```free(f_array_dyn)```: Releases block of memory associated with f_array_dyn
+
+To compile and run code:
+```
+$ gcc –o dynamic dynamic.c
+$ ./dynamic
+f_array_dyn[0] = 0.000000
+f_array_dyn[1] = 0.250000
+f_array_dyn[2] = 0.500000
+f_array_dyn[3] = 0.750000
+f_array_dyn[4] = 1.000000
+```
+
+### <a name="exercises"></a>8. Exercises and Resources
+* Exercises that go with these slides (as well as some examples to work through)
+– https://github.com/olcf/foundational_hpc_skills •
+
+* Other sites
+– https://en.cppreference.com/w/c/language
+– https://en.wikibooks.org/wiki/C_Programming
+– https://stackoverflow.com/questions/tagged/c
+
+* Many other tutorials can be found by googling “c programming language”
+• Website with many practice problems – https://projecteuler.net/
