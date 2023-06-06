@@ -235,7 +235,7 @@ Actual value of pi ( 29 decimal places ): 3.14159265358979323846264338327
 
 ### <a name="loops"></a>3. Loops
 
-### <ins name="while">While Loops</ins>a. While:
+### <a name="while"></a>a. While Loops
 
 ```
 while(expression){
