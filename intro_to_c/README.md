@@ -487,10 +487,15 @@ Relational Operators tests relationship between two operands
 * If true, returns 1
 * If false, returns 0
 
-
 | Operator          | Syntax        | Output | True/False |
 | ------------- | ------------- | -------------   | -------------   |     
-| == Equal to          | A + B     | 0 | False |
+| == Equal to          | A == B;     | 0 | False |
+| != Not equal to          | A != B;     | 1 | True |
+| > Greater than          | A > B;     | 1 | True |
+| < Less than          | A < B;     | 0 | False |
+| >= Greater than or equal to          | A >= B;     | 1 | True |
+| <= Less than or equal to          | A >= B;     | 0 | False |
+
 
 ### <a name="functions"></a>5. Functions
 ### <a name="add"></a>6. Addresses and Pointers
