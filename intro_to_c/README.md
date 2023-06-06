@@ -16,7 +16,7 @@ Table of Contents:
 	* Basic Data Types
 	* `printf` function
 	* Arrays
-* [Loops]
+* [Loops](#loops)
 	* [While Loop](#while)
 	* [`do-while` loop](#dowhile)
 	* [`for` loop](#for)
