@@ -782,19 +782,19 @@ The * in these statements is the dereference operator, which allows you to acces
 ### <a name="mem"></a>7. Memory Allocation
 <ins>Stack</ins>:
 
-– Region of computer memory that stores temporary variables
-• When a new function is called the variables are created on stack
-• When the function returns, the memory is returned to the stack (LIFO)
-– Memory managed for you
-– Variables can only be accessed locally
-– Variable size must be known at compile time
+* Region of computer memory that stores temporary variables
+* When a new function is called the variables are created on stack
+* When the function returns, the memory is returned to the stack (LIFO)
+* Memory managed for you
+* Variables can only be accessed locally
+* Variable size must be known at compile time
 
 <ins>Heap</ins>:
 
-– Region of compute memory for dynamic allocation
-• No pattern to allocation/deallocation (user can do this any time) – Memory managed by user
-• E.g. using malloc(), free(), etc.
-– Variables can be accessed globally
-– Variable size can be determined at run time
+* Region of compute memory for dynamic allocation
+* No pattern to allocation/deallocation (user can do this any time) – Memory managed by user
+* E.g. using malloc(), free(), etc.
+* Variables can be accessed globally
+* Variable size can be determined at run time
 
 ### <a name="exercises"></a>8. Exercises
