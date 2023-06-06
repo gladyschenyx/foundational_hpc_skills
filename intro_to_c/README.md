@@ -25,6 +25,8 @@ Table of Contents:
  	* [Assignment Operators](#asop)
  	* [Logical Operators](#lop)
 * [Functions](#functions)
+  	* [Standard Library Functions](#slf)
+ 	* [User-Defined Functions](#udf)
 * [Addresses and Pointers](#add)
 * [Memory Allocation](#mem)
 * [Exercises](#exercises)
@@ -535,8 +537,137 @@ if(condition_1){
 ```
 Once a condition is met, the statements associated with that section are executed and all other sections are ignored.
 
+Example:
+```
+/*------------------------------------------------------------
+Program showing the use of an if-elseif-else statement.
+------------------------------------------------------------*/
+
+#include <stdio.h>
+
+int main(){
+
+    int i = 1;
+
+    if(i < 1){
+        printf("i = %d (i < 1)\n", i);
+    }
+    else if(i == 1){
+        printf("i is equal to 1\n");
+    }
+    else{
+        printf("i = %d (i > 1)\n", i);
+    }
+
+    return 0;
+}
+```
+To compile and run code:
+```
+$ gcc –o if_statement if_statement.c
+$ ./if_statement
+i is equal to 1
+```
 
 ### <a name="functions"></a>5. Functions
+A reusable block of code that performs a specific task
+
+### <a name="slf"></a> a. Standard Library Functions
+C built-in functions that can be accessed with appropriate #include statements
+
+* We have already encountered the printf function, which can be used by including the stdio.h header file
+* There are many other C standard library functions defined in other header files (math.h, stdlib.h, string.h, etc).
+
+* These functions should be used whenever possible in order to save time (why re- invent the wheel) and because they are well-tested and portable.
+ 
+
+### <a name="udf"></a> b. User-Defined Functions
+Syntax:
+```
+return_type function_name(type1 arg1, type2 arg2, ...) { 
+// Function Body
+}
+```
+
+Example:
+```
+/*-------------------------------------------------
+Program that shows how to use user-defined
+functions. The function simply adds two integers.
+-------------------------------------------------*/
+#include <stdio.h>
+
+// Function Definition
+int add_numbers(int i, int j){
+
+    int result;
+    result = i + j;
+
+    return result;
+}
+
+// Main Function
+int main(){
+
+    int num1 = 3;
+    int num2 = 7;
+
+    int sum = add_numbers(num1, num2);
+    printf("The sum of num1 and num2 is %d\n", sum);
+
+    return 0;
+}
+```
+* Formal parameters/arguments: (int i, int j)
+* Actual parameters/arguments: (num1, num2)
+
+To compile and run code:
+```
+$ gcc –o add_two_numbers add_two_numbers.c
+$ ./add_two_numbers
+The sum of num1 and num2 is 10
+```
+
+Example of function (05_functions/change_value/change_value.c):
+```
+/*---------------------------------------------------------------
+Program that INCORRECTLY shows how to use a function to change
+the value of an integer. This is meant to show that C functions
+are "call by value" by default.
+---------------------------------------------------------------*/
+
+#include <stdio.h>
+
+// Function Definition
+void change_number(int i){
+    i = 2;
+    printf("Inside the function, the number's value is %d\n", i);
+}
+
+// Main Function
+int main(){
+
+    int number = 1;
+    printf("\nBefore calling the function, number = %d\n", number);
+
+    change_number(number);
+
+    printf("After calling the function, number = %d\n\n", number);
+
+    return 0;
+}
+```
+To compile and run code:
+```
+$ gcc –o change_value change_value.c
+$ ./change_value
+Before calling the function, number = 1
+Inside the function, the number's value is 2
+After calling the function, number = 1
+```
+<ins>Call By Value</ins>:
+* The values of the actual arguments are copied to the formal arguments.
+* Changes to the formal arguments do not affect the actual arguments.
 
 ### <a name="add"></a>6. Addresses and Pointers
 ### <a name="mem"></a>7. Memory Allocation
