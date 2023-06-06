@@ -143,6 +143,7 @@ int i = 2;
 printf(“The value of the integer is %d\n”, i);
 ```
 * i represents the variable whose value is used in the format tag
+
 The Result of Example 3 would be: The value of the integer is 2
  
  <ins>Example 4</ins>:
@@ -151,6 +152,7 @@ float x = 3.14159;
 printf(“The value of the float is %.2f\n”, x);
 ```
 * x represents the variable whose value is used in the format tag
+
 The result of Example 4 would be: The value of the float is 3.14
  
 ### C Arrays - Data structure that holds a fixed number of data elements of a specific type
