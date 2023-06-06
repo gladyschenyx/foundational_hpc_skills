@@ -278,7 +278,7 @@ x = 3.906250
 x = 1.953125
 ```
 
-### <a name="Do While"></a> b. Do While Loops
+### <a name="dowhile"></a> b. Do While Loops
 
 ```
 do {
