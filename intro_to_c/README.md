@@ -17,6 +17,9 @@ Table of Contents:
 	* `printf` function
 	* Arrays
 * [Loops](#loops)
+	* `while` loop
+	* `do-while` loop
+	* `for` loop
 * [If Statements](#if)
 * [Functions](#functions)
 * [Addresses and Pointers](#add)
@@ -231,6 +234,51 @@ Actual value of pi ( 29 decimal places ): 3.14159265358979323846264338327
 
 
 ### <a name="loops"></a>3. Loops
+ <ins>While Loops</ins>:
+
+```
+while(expression){
+// Execute loop statements until expression evaluates to 0
+}
+```
+* The expression is evaluated before each iteration
+
+Example of while loop (03_loops/while_loop/while_loop.c):
+```
+#include <stdio.h>
+
+int main(){
+
+    float x = 1000.0;
+
+    while(x > 1.0){
+        printf("x = %f\n", x);
+        x = x / 2.0;
+    }
+
+    return 0;
+}
+```
+
+To compile and run the code:
+```
+$ gcc -o while_loop while_loop.c
+
+$ ./while_loop
+x = 1000.000000
+x = 500.000000
+x = 250.000000
+x = 125.000000
+x = 62.500000
+x = 31.250000
+x = 15.625000
+x = 7.812500
+x = 3.906250
+x = 1.953125
+```
+
+
+
 ### <a name="if"></a>4. If Statements
 ### <a name="functions"></a>5. Functions
 ### <a name="add"></a>6. Addresses and Pointers
