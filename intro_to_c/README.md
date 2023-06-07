@@ -72,6 +72,7 @@ To compile the C program, use the gcc compiler to compile the C code into an exe
 ```
 $ gcc simple.c
 ```
+> Note: $ is known as the Bash Prompt, which means you can enter a command and press Enter to execute it.
 
 An executable is named a.out by default. To view the list of files in a current directory, use the `ls` command: 
 ```
@@ -134,6 +135,7 @@ Output:
 Hello World$
  ```
 Result: Hello World
+> Note: To get a new line on the prompt, insert a new line using (\n)
 
 <ins>Example 2</ins>:
 
