@@ -850,7 +850,9 @@ f_array[4] = 1.000000
 <ins>Dynamic vs Static Memory Allocation</ins>:
 | Differences         | Dynamic Memory        | Static Memory | 
 | ------------- | -------------   | -------------   |
-| Allocation occurs at          | Runtime       | Compile Time | 
+| Allocation Occurs At          | Runtime       | Compile Time | 
+| Uses          | Heap       | Stack | 
+| Reusability          | Reusable memory       | No memory reusability | 
 
 <ins>Dynamic</ins>:
 Example of Dynamic Memory Allocation (07_memory_allocation/dynamic.c):
