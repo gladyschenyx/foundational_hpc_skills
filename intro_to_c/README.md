@@ -733,6 +733,7 @@ The value stored at the memory address held in p_x: 2.713000
 ```
 
 Another Example of using Addresses and Pointers (06_addresses_and_pointers/pointers_2/pointers_2.c)
+
 ```*p_x = 3.141```: (dereference operator) – also allows you to change the value stored at that memory address
 
 <ins>Back to Functions</ins>:
