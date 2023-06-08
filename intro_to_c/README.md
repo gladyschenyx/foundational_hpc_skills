@@ -672,6 +672,9 @@ After calling the function, number = 1
 * Changes to the formal arguments do not affect the actual arguments.
 
 ### <a name="add"></a>6. Addresses and Pointers
+
+Addresses and pointers help programmers to efficiently utilize memory and manipulate data.
+
 <ins>Variable Addresses</ins>:
 * The memory address of a variable can be referenced using the reference operator, &
 
@@ -865,6 +868,7 @@ int main(){
     return 0;
 }
 ```
+
 ``` malloc(N*sizeof(float))```: Allocates N*sizeof(float) bytes of memory and returns pointer to the block of memory
 
 ```free(f_array_dyn)```: Releases block of memory associated with f_array_dyn
