@@ -681,6 +681,8 @@ After calling the function, number = 1
 * Changes to the formal arguments do not affect the actual arguments.
 
 ### <a name="add"></a>6. Addresses and Pointers
+Addresses and pointers allow programmers to effectively utilize memory and manipulate data.
+
 <ins>Variable Addresses</ins>:
 * The memory address of a variable can be referenced using the reference operator, &
 
